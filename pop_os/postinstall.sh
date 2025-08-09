@@ -8,14 +8,14 @@
 # sair automaticamente se encontrar algum erro
 set -e
 
-JETBRAINS_FONT_NAME="JetBrainsMono-2.304"
+JETBRAINS_FONT_NAME="JetBrainsMono"
 HACK_FONT_NAME="Hack"
 
 # URLs
 URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 URL_VISUAL_STUDIO_CODE="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-URL_FONT_JETBRAINS_MONO="https://download.jetbrains.com/fonts/$JETBRAINS_FONT_NAME.zip"
-URL_FONT_HACK="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip"
+URL_FONT_JETBRAINS_MONO="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$JETBRAINS_FONT_NAME.zip"
+URL_FONT_HACK="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$HACK_FONT_NAME.zip"
 
 DIR_DOWNLOADS="/home/$USER/Downloads/softwares"
 FILE="/home/$USER/.config/gtk-3.0/bookmarks"
@@ -78,6 +78,7 @@ PROGRAMAS_PARA_INSTALAR=(
   libu2f-udev # utilizado na instalacao do chrome
   libfuse2 # Utilizado para instalar AppImages
   build-essential # gcc make
+  alacritty # terminal
 )
 
 # ---------------------------------------------------------------------- #
@@ -114,13 +115,12 @@ install_flatpaks(){
 
   echo -e "${VERDE}[INFO] - Instalando pacotes flatpak${SEM_COR}"
 
-flatpak install flathub com.obsproject.Studio -y
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub com.spotify.Client -y
-flatpak install flathub com.bitwarden.desktop -y
+# flatpak install flathub com.obsproject.Studio -y
+# flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub org.telegram.desktop -y
 flatpak install flathub org.freedesktop.Piper -y
-flatpak install flathub org.chromium.Chromium -y
 flatpak install flathub org.qbittorrent.qBittorrent -y
 }
 
@@ -175,20 +175,13 @@ curl -o /home/$USER/.ssh/config 'https://gist.githubusercontent.com/gustavod5/ed
 
 
 mkdir $HOME/TEMP
-mkdir $HOME/AppImage
-mkdir $HOME/Videos/OBSRec
-mkdir $HOME/Projects
-mkdir $HOME/Projects/personal
-mkdir $HOME/Projects/work
-mkdir $HOME/Projects/ufla
-mkdir $HOME/Projects/ufla/compjr
+mkdir $HOME/Applications
+mkdir $HOME/Videos/Recordings
+mkdir $HOME/www
+mkdir $HOME/www/personal
+mkdir $HOME/www/work
 
-# Sync and second brain notes
-mkdir $HOME/Documents/SecondBrain
-mkdir $HOME/Sync/backup-log
-
-
-#Adiciona atalhos ao Nautilus
+# Adiciona atalhos ao Nautilus
 
 if test -f "$FILE"; then
     echo "$FILE já existe"
@@ -197,12 +190,12 @@ else
     touch /home/$USER/.config/gkt-3.0/bookmarks
 fi
 
-echo "file:///home/$USER/Documents/SecondBrain 🧠 SecondBrain" >> $FILE
-echo "file:///home/$USER/Projects 🗃️ Projects" >> $FILE
-echo "file:///home/$USER/Projects/ufla 📚 UFLA" >> $FILE
-echo "file:///home/$USER/Projects/ufla/compjr 🔵 CompJr" >> $FILE
-echo "file:///home/$USER/Videos/OBSRec 🎥 OBS" >> $FILE
-echo "file:///home/$USER/AppImage" >> $FILE
+echo "file:///home/$USER/Documents/Notes 🧠 Notes" >> $FILE
+echo "file:///home/$USER/www 🗃️ Projects" >> $FILE
+echo "file:///home/$USER/www/personal/blog My blog" >> $FILE
+echo "file:///home/$USER/www/ufla/work 🔵 Work" >> $FILE
+echo "file:///home/$USER/Videos/Recordings 🎥 OBS" >> $FILE
+echo "file:///home/$USER/Applications" >> $FILE
 echo "file:///home/$USER/TEMP 🕖 TEMP" >> $FILE
 }
 
