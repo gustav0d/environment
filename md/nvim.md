@@ -1,6 +1,7 @@
+
 # Neovim
 
-## TODO: Update this
+- [ ] TODO: Update this
 
 - [Neovim](https://neovim.io/) is a hyperextensible [[Vim]]-based text editor.
 
@@ -10,7 +11,7 @@
 
 - If you're using an Ubuntu-based distro, you might need to add the stable ppa from neovim so you can use up-to-date features (you can also install the unstable ppa as well, just change form `stable` to `unstable`)
 
-```shell
+```bash
 sudo add-apt-repository ppa:neovim-ppa/stable
 ```
 
