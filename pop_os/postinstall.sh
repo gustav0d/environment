@@ -100,7 +100,7 @@ done
 
 echo -e "${VERDE}[INFO] - Baixando pacotes .deb${SEM_COR}"
 
-mkdir "$DIR_DOWNLOADS"
+mkdir -p "$DIR_DOWNLOADS"
 wget -c "$URL_GOOGLE_CHROME"       -P "$DIR_DOWNLOADS"
 curl -o "$DIR_DOWNLOADS/code_stable.deb" -L "$URL_VISUAL_STUDIO_CODE"
 
@@ -169,17 +169,17 @@ nautilus -q
 extra_config(){
 
 # setup ssh stuff
-mkdir /home/$USER/.ssh/
+mkdir -p /home/$USER/.ssh/
 # Pegando minha config padrao para o zsh config
 curl -o /home/$USER/.ssh/config 'https://gist.githubusercontent.com/gustavod5/edc35f72b4bc3d2d29778f34cea7cb7e/raw/ccc3b866d250ce753a45460cd14662ce0a5c377a/config'
 
 
-mkdir $HOME/TEMP
-mkdir $HOME/Applications
-mkdir $HOME/Videos/Recordings
-mkdir $HOME/www
-mkdir $HOME/www/personal
-mkdir $HOME/www/work
+mkdir -p $HOME/TEMP
+mkdir -p $HOME/Applications
+mkdir -p $HOME/Videos/Recordings
+mkdir -p $HOME/www
+mkdir -p $HOME/www/personal
+mkdir -p $HOME/www/work
 
 # Adiciona atalhos ao Nautilus
 
