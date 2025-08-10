@@ -2,6 +2,8 @@
 
 For Windows and MacOS you can simply install it and run it. For Linux based systems you also need to download and install it, but for sake of adding a desktop entry and other stuff, you might want to follow the additional steps below.
 
+## Download and install
+
 No matter the OS, [download Cursor](https://cursor.com/downloads)
 
 > [!NOTE]
@@ -11,7 +13,7 @@ No matter the OS, [download Cursor](https://cursor.com/downloads)
 > rm ~/Downloads/Cursor-*-x86_64.AppImage
 > ```
 
-## AppImage additional steps
+### AppImage additional steps
 
 > [!NOTE]
 > I'm using `/opt/cursor/.appimage` as the installation directory, but you can choose any other directory you prefer.
@@ -22,7 +24,7 @@ sudo mv ~/Downloads/Cursor-*-x86_64.AppImage /opt/cursor.appimage
 sudo chmod +x /opt/cursor.appimage
 ```
 
-### Create a desktop entry
+#### Create a desktop entry
 
 Download the Cursor icon from their website
 
@@ -47,22 +49,31 @@ Categories=Development;Editor;
 Terminal=false
 ```
 
-### Fix executable permissions
+#### Fix executable permissions
 
 ```bash
 sudo chmod +x /usr/share/applications/cursor.desktop
 ```
 
-### Uninstall Cursor
+#### Uninstall Cursor
 
 ```bash
 sudo rm /opt/cursor.appimage sudo rm /usr/share/applications/cursor.desktop sudo rm /usr/share/pixmaps/cursor.svg
 ```
 
-### Troubleshooting
+#### Troubleshooting
 
 Reload the desktop environment
 
 ```bash
 update-desktop-database ~/.local/share/applications
 ```
+
+## Using cursor
+
+You can use some [VSCode extensions](./vscode.md).
+
+- Agent mode: `Ctrl + I`
+- Inline: `Ctrl + K`
+- Tab autocomplete
+
