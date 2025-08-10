@@ -22,3 +22,10 @@
 ```bash
 flatpak install flathub com.spotify.Client
 ```
+
+## GNOME Extensions
+
+- <https://extensions.gnome.org/extension/779/clipboard-indicator/>
+- <https://extensions.gnome.org/extension/517/caffeine/>
+- <https://extensions.gnome.org/extension/36/lock-keys/>
+- <https://extensions.gnome.org/extension/906/sound-output-device-chooser/>
