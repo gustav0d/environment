@@ -79,7 +79,8 @@ PROGRAMAS_PARA_INSTALAR=(
   libfuse2 # Utilizado para instalar AppImages
   build-essential # gcc make
   alacritty # terminal
-  dconf-editor # 
+  vim-gtk # to use clipboard
+  dconf-editor
 )
 
 # ---------------------------------------------------------------------- #
