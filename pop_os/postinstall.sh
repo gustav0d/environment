@@ -79,6 +79,7 @@ PROGRAMAS_PARA_INSTALAR=(
   libfuse2 # Utilizado para instalar AppImages
   build-essential # gcc make
   alacritty # terminal
+  dconf-editor # 
 )
 
 # ---------------------------------------------------------------------- #
@@ -199,6 +200,13 @@ echo "file:///home/$USER/Applications" >> $FILE
 echo "file:///home/$USER/TEMP 🕖 TEMP" >> $FILE
 }
 
+post_update() {
+# Disable the default value for IBus emoji hotkey
+# https://www.reddit.com/r/pop_os/comments/bsh9uk/comment/eonb54n/
+echo "Configuring Ctrl+Shift+E hotkey"
+dconf write /desktop/ibus/panel/emoji/hotkey "@as []"
+}
+
 # -------------------------------EXECUÇÃO----------------------------------------- #
 
 travas_apt
@@ -215,6 +223,7 @@ install_fonts
 extra_config
 apt_update
 system_clean
+post_update
 
 ## finalização
 
