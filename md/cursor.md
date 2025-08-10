@@ -41,7 +41,7 @@ sudo vim /usr/share/applications/cursor.desktop
 Name=Cursor
 Comment=Editor Cursor
 Exec=/opt/cursor.appimage
-Icon=/usr/share/pixmaps/cursor.png
+Icon=/usr/share/pixmaps/cursor.svg
 Type=Application
 Categories=Development;Editor;
 Terminal=false
