@@ -2,7 +2,7 @@
 
 I put most of my dotfiles config stuff here. I try keeping as much up to date as I can (even though I usually update them when I switch to a new machine). Feel free to open an issue if you got any suggestions, questions, etc...
 
-Since Pop!_OS is the distro I have used for most of the time, I have a script that automates the post-installation setup. It includes installing essential packages, configuring settings, and setting up some development tools (it's right there: [postinstall.sh](./pop_os/postinstall.sh)). But it's not completely automated for all the things I use.
+Since Pop!_OS is the distro I have used for most of the time, I have a script that automates the post-installation setup. It includes installing essential packages, configuring settings, and setting up some development tools (it's right there: [postinstall.sh](./scripts/pop_os_postinstall.sh)). But it's not completely automated for all the things I use.
 
 > [!NOTE]
 > Currently using bash but I plan to switch to zsh;

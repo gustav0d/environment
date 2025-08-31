@@ -17,6 +17,8 @@ URL_VISUAL_STUDIO_CODE="https://code.visualstudio.com/sha/download?build=stable&
 URL_FONT_JETBRAINS_MONO="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$JETBRAINS_FONT_NAME.zip"
 URL_FONT_HACK="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$HACK_FONT_NAME.zip"
 
+# - [ ] Add obsidian https://github.com/obsidianmd/obsidian-releases/releases/latest/
+
 DIR_DOWNLOADS="/home/$USER/Downloads/softwares"
 FILE="/home/$USER/.config/gtk-3.0/bookmarks"
 DIR_FONTS="$HOME/.local/share/fonts"
@@ -173,7 +175,7 @@ extra_config(){
 # setup ssh stuff
 mkdir -p /home/$USER/.ssh/
 # Pegando minha config padrao para o zsh config
-curl -o /home/$USER/.ssh/config 'https://gist.githubusercontent.com/gustavod5/edc35f72b4bc3d2d29778f34cea7cb7e/raw/ccc3b866d250ce753a45460cd14662ce0a5c377a/config'
+# curl -o /home/$USER/.ssh/config 'https://gist.githubusercontent.com/gustavod5/edc35f72b4bc3d2d29778f34cea7cb7e/raw/ccc3b866d250ce753a45460cd14662ce0a5c377a/config'
 
 
 mkdir -p $HOME/TEMP
