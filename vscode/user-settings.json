@@ -1,0 +1,132 @@
+{
+  "editor.lineNumbers": "relative",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [80, 100],
+  "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontLigatures": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.minimap.enabled": false,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "symbols.hidesExplorerArrows": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.editor.labelFormat": "short",
+  "workbench.startupEditor": "terminal",
+  "workbench.tree.indent": 16,
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+
+  "window.commandCenter": false,
+
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.tabs.enabled": true,
+
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    "*.tsx": "typescriptreact",
+    "*.css": "css",
+    "css": "css"
+  },
+
+
+  "extensions.ignoreRecommendations": true,
+
+  // Language-specific settings
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.formatOnSave": true
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "git.autofetch": true,
+  
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  "json.schemas": [],
+  
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "javascript.validate.enable": false,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  
+  "diffEditor.ignoreTrimWhitespace": false,
+  
+  "vim.cursorStylePerMode.insert": "block-outline",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.useSystemClipboard": true,
+  "vim.smartRelativeLine": true,
+
+  "settingsSync.ignoredExtensions": ["github.classroom"],
+  
+  "redhat.telemetry.enabled": false
+}
