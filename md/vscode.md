@@ -1,5 +1,7 @@
 # Visual Studio Code
 
+- [ ] TODO: Move these configurations to a gist or to my blog, I thought of doing something like fala.dev
+
 - [Extensions](#extensions)
 - [Themes](#themes)
 
@@ -18,8 +20,8 @@
 - Vue (Official)
 - Prisma
 - PowerShell (if using Windows)
-- Jest
 - ENV
+- [Custom UI style](https://marketplace.visualstudio.com/items?itemName=subframe7536.custom-ui-style)
 
 ### AI (if not using Cursor)
 
